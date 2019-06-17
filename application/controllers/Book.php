@@ -65,11 +65,14 @@ class Book extends CI_Controller {
 		// baca key dari form cari data
 		$key = $_POST['key'];
 
+		// ambil session fullname untuk ditampilkan ke header
+		$data['fullname'] = $_SESSION['fullname'];
+
 		// panggil method findBook() dari model book_model untuk menjalankan query cari data
 		$data['book'] = $this->book_model->findBook($key);
 
 		// tampilkan hasil pencarian di view 'dashboard/books'
-		$this->load->view('dashboard/header');
+		$this->load->view('dashboard/header', $data);
         $this->load->view('dashboard/books', $data);
         $this->load->view('dashboard/footer');
 	}
