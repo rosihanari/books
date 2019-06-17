@@ -5,10 +5,12 @@ class Dashboard extends CI_Controller {
 			parent::__construct();
 
 			// cek keberadaan session 'username'	
+            /*
 			if (!isset($_SESSION['username'])){
 				// jika session 'username' blm ada, maka arahkan ke kontroller 'login'
 				redirect('login');
 			}
+            */
 		}
 
 		// halaman index dari dashboard -> menampilkan grafik statistik jumlah data buku berdasarkan kategori
