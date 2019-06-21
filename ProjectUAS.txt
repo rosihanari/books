@@ -21,3 +21,4 @@ Project UAS
    di halaman data buku
 6. Tambahkan fitur edit dan view data buku
    di halaman data buku
+7. Lengkapi modul data buku dengan paging

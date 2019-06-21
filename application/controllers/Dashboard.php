@@ -5,12 +5,12 @@ class Dashboard extends CI_Controller {
 			parent::__construct();
 
 			// cek keberadaan session 'username'	
-            /*
+            
 			if (!isset($_SESSION['username'])){
 				// jika session 'username' blm ada, maka arahkan ke kontroller 'login'
 				redirect('login');
 			}
-            */
+            
 		}
 
 		// halaman index dari dashboard -> menampilkan grafik statistik jumlah data buku berdasarkan kategori
@@ -40,12 +40,14 @@ class Dashboard extends CI_Controller {
 			$data['kategori'] = $this->book_model->getKategori();
 
 			// menghitung jumlah data buku per kategori untuk ditampilkan di view
+            
 			$data['countBukuTeks'] = 0;
         	$data['countMajalah'] = 0;
         	$data['countSkripsi'] = 0;
         	$data['countThesis'] = 0;
         	$data['countDisertasi'] = 0;
         	$data['countNovel'] = 0;
+            
 
         	// baca data session 'fullname' untuk ditampilkan di view
         	$data['fullname'] = $_SESSION['fullname'];
