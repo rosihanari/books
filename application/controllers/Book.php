@@ -51,12 +51,12 @@ class Book extends CI_Controller {
 
 	// method untuk edit data buku berdasarkan id
 	public function edit($id){
-
+		
 	}
 
 	// method untuk update data buku berdasarkan id
 	public function update($id){
-
+		
 	}
 
 	// method untuk mencari data buku berdasarkan 'key'
