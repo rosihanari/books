@@ -2,7 +2,6 @@
 Books Project
 ###################
 Dibuat oleh: Rosihan Ari Yuana
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Books Project digunakan sebagai sample project untuk keperluan perkuliahan di Pendidikan TIK FKIP Universitas Sebelas Maret. Books Project merupakan Web-based Project Application yang dibuat menggunakan Codeigniter 3 PHP Framework 
 
